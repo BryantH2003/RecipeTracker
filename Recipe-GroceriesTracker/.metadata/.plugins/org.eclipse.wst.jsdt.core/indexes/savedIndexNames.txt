@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+/Users/bryanthuynh/Desktop/CS/Recipe Tracker Project/Recipe-GroceriesTracker/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+2145126260.index
+3499528258.index
+4173838811.index
+3577621488.index
+2135118622.index
+3993808502.index
