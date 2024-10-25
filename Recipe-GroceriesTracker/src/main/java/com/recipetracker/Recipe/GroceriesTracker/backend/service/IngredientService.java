@@ -1,5 +1,7 @@
 package com.recipetracker.Recipe.GroceriesTracker.backend.service;
 
+import java.util.Optional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -33,5 +35,9 @@ public class IngredientService {
         Ingredient ingredient = getIngredientByID(id); // Validates existence
         repository.deleteById(id);
         return ingredient;
+    }
+
+    public Optional<Ingredient> findIngredientByName(String name) {
+        return repository.findByIngredientName(name);
     }
 }

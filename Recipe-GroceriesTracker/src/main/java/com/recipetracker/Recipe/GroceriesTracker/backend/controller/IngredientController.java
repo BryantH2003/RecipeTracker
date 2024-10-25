@@ -50,4 +50,12 @@ public class IngredientController {
         Ingredient updatedIngredient = ingredientService.editIngredientAmt(ingredient, amount);
         return ResponseEntity.ok(updatedIngredient);
     }
+
+    // Get ingredient by name
+    @GetMapping("/name/{name}")
+    public ResponseEntity<Ingredient> getIngredientByName(@PathVariable String name) {
+        return ingredientService.findIngredientByName(name)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
+    }
 }
