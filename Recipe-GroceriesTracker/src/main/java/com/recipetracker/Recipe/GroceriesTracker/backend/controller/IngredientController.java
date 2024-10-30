@@ -8,9 +8,14 @@ import org.springframework.web.bind.annotation.*;
 import com.recipetracker.Recipe.GroceriesTracker.backend.model.Ingredient;
 import com.recipetracker.Recipe.GroceriesTracker.backend.service.IngredientService;
 
-@RestController
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
 @RequestMapping("/ingredients")
 
+@RestController
+@CrossOrigin(origins = "http://localhost:3000")
 public class IngredientController {
     
     @Autowired
